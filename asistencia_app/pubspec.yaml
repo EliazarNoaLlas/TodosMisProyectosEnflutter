@@ -1,0 +1,38 @@
+# pubspec.yaml
+# Propósito: Configuración del proyecto Flutter para la aplicación "Asistencia App"
+# Autor: Walter Stefano
+# Fecha de modificación: 2024-11-06
+
+name: asistencia_app
+description: "Aplicación de gestión de asistencia, desarrollada en Flutter."
+publish_to: 'none' # No publicar en pub.dev, ya que es un proyecto privado
+
+# Versión de la aplicación en formato mayor.menor.revisión+build
+version: 1.0.0+1
+
+# Versión mínima de Dart SDK necesaria para ejecutar el proyecto
+environment:
+  sdk: '>=3.5.3 <4.0.0'
+
+# Dependencias principales del proyecto
+dependencies:
+  flutter:
+    sdk: flutter # Incluye el SDK de Flutter necesario
+  floor: ^1.4.2 # ORM para manejar bases de datos SQLite
+  sqflite: ^2.0.0 # Biblioteca para manejar SQLite en Flutter
+  cupertino_icons: ^1.0.8 # Iconos estilo iOS para uso en Flutter
+  json_annotation: ^4.9.0 # Serializacion y deserializacion de datos en formato JSON
+
+# Dependencias para desarrollo y pruebas
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # SDK para pruebas de Flutter
+  flutter_lints: ^2.0.0 # Linting para mejores prácticas de código
+  floor_generator: ^1.4.2 # Generador de código para Floor (ORM)
+  build_runner: ^2.1.2 # Herramienta para ejecutar generadores de código
+  json_serializable: ^6.6.1
+
+
+# Configuración adicional para Flutter
+flutter:
+  uses-material-design: true # Activa el uso del diseño Material en la aplicación
